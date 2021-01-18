@@ -28,7 +28,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    brooklyn_99_quotes = [
+    robo_phrases = [
         'Dont worry, you can find a friend in me',
         (
             'That was a bit lazy dont ya think'
@@ -36,7 +36,7 @@ async def on_message(message):
     ]
 
     if message.content == 'i am the imposter':
-        response = random.choice(brooklyn_99_quotes)
+        response = random.choice(robo_phrases)
         await message.channel.send(response)
 
 client.run(TOKEN)
